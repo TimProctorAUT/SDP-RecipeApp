@@ -588,13 +588,11 @@
         "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid10/FormsViewGroup.dll",
-        "lib/MonoAndroid10/FormsViewGroup.dll.mdb",
         "lib/MonoAndroid10/FormsViewGroup.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Core.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll",
-        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll.mdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll",
@@ -719,20 +717,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\OEM\\.nuget\\packages\\": {}
+    "C:\\Users\\USER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OEM\\Documents\\GitHub\\SDP-RecipeApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.iOS\\CrockpotApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\source\\repos\\CrockpotApp\\CrockpotApp\\CrockpotApp.iOS\\CrockpotApp.iOS.csproj",
       "projectName": "CrockpotApp.iOS",
-      "projectPath": "C:\\Users\\OEM\\Documents\\GitHub\\SDP-RecipeApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.iOS\\CrockpotApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\OEM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\OEM\\Documents\\GitHub\\SDP-RecipeApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.iOS\\obj\\",
+      "projectPath": "C:\\Users\\USER\\source\\repos\\CrockpotApp\\CrockpotApp\\CrockpotApp.iOS\\CrockpotApp.iOS.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USER\\source\\repos\\CrockpotApp\\CrockpotApp\\CrockpotApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\OEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -745,8 +743,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\OEM\\Documents\\GitHub\\SDP-RecipeApp\\CrockpotApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.csproj": {
-              "projectPath": "C:\\Users\\OEM\\Documents\\GitHub\\SDP-RecipeApp\\CrockpotApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.csproj"
+            "C:\\Users\\USER\\source\\repos\\CrockpotApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\CrockpotApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.csproj"
             }
           }
         }

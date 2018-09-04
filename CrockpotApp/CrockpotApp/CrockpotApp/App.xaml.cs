@@ -1,17 +1,20 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using CrockpotApp.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CrockpotApp
 {
     public partial class App : Application
     {
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new HomePage();
+
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
