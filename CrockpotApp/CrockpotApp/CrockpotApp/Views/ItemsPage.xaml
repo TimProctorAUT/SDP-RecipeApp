@@ -32,8 +32,8 @@
                        LineBreakMode="NoWrap" 
                        Style="{DynamicResource ListItemTextStyle}" 
                        FontSize="16" />
-                                <Label Text="{Binding Description}" 
-                       LineBreakMode="NoWrap"
+                                <Label Text="{Binding Summary}" 
+                       LineBreakMode="WordWrap"
                        Style="{DynamicResource ListItemDetailTextStyle}"
                        FontSize="13" />
                             </StackLayout>

@@ -717,20 +717,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\OEM\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\source\\repos\\CrockpotApp\\CrockpotApp\\CrockpotApp.iOS\\CrockpotApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\OEM\\Documents\\GitHub\\SDP-RecipeApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.iOS\\CrockpotApp.iOS.csproj",
       "projectName": "CrockpotApp.iOS",
-      "projectPath": "C:\\Users\\USER\\source\\repos\\CrockpotApp\\CrockpotApp\\CrockpotApp.iOS\\CrockpotApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\source\\repos\\CrockpotApp\\CrockpotApp\\CrockpotApp.iOS\\obj\\",
+      "projectPath": "C:\\Users\\OEM\\Documents\\GitHub\\SDP-RecipeApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.iOS\\CrockpotApp.iOS.csproj",
+      "packagesPath": "C:\\Users\\OEM\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\OEM\\Documents\\GitHub\\SDP-RecipeApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\OEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -743,8 +743,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\USER\\source\\repos\\CrockpotApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.csproj": {
-              "projectPath": "C:\\Users\\USER\\source\\repos\\CrockpotApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.csproj"
+            "C:\\Users\\OEM\\Documents\\GitHub\\SDP-RecipeApp\\CrockpotApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.csproj": {
+              "projectPath": "C:\\Users\\OEM\\Documents\\GitHub\\SDP-RecipeApp\\CrockpotApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.csproj"
             }
           }
         }

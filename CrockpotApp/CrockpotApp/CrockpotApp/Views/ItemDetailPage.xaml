@@ -4,9 +4,35 @@
              x:Class="CrockpotApp.Views.ItemDetailPage"
              Title="{Binding Title}">
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Item.Text}" FontSize="Small"/>
-        <Label Text="Description:" FontSize="Medium" />
-        <Label Text="{Binding Item.Description}" FontSize="Small"/>
+        <StackLayout>
+            <Label Text="{Binding Item.Text}" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Label Text="{Binding Item.Summary}" FontSize="Small"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <StackLayout WidthRequest="180" HorizontalOptions="StartAndExpand">
+                <Label Text="Ingredients:" FontAttributes="Bold"/>
+                
+                <ListView>
+                    <!--INSERT INGREDIENTS ITEMS-->
+                
+                </ListView>
+                
+            </StackLayout>
+            <StackLayout HorizontalOptions="EndAndExpand">
+                <Label Text="Contents:" FontAttributes="Bold"/>
+                <Label Text="{Binding Item.Description}"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Preperation Time:"/>
+                    <Label Text="{Binding Item.PrepTime}"/>
+                    <Label Text="Minutes"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Cooking Time:"/>
+                    <Label Text="{Binding Item.CookTime}"/>
+                    <Label Text="Minutes"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
     </StackLayout>
 </ContentPage>

@@ -343,23 +343,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
+    "C:\\Users\\OEM\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\source\\repos\\CrockpotApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.csproj",
+      "projectUniqueName": "C:\\Users\\OEM\\Documents\\GitHub\\SDP-RecipeApp\\CrockpotApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.csproj",
       "projectName": "CrockpotApp",
-      "projectPath": "C:\\Users\\USER\\source\\repos\\CrockpotApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\source\\repos\\CrockpotApp\\CrockpotApp\\CrockpotApp\\obj\\",
+      "projectPath": "C:\\Users\\OEM\\Documents\\GitHub\\SDP-RecipeApp\\CrockpotApp\\CrockpotApp\\CrockpotApp\\CrockpotApp.csproj",
+      "packagesPath": "C:\\Users\\OEM\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\OEM\\Documents\\GitHub\\SDP-RecipeApp\\CrockpotApp\\CrockpotApp\\CrockpotApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\OEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
