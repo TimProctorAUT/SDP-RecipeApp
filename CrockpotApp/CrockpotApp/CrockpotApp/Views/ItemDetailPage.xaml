@@ -9,20 +9,35 @@
             <Label Text="{Binding Item.Summary}" FontSize="Small"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <StackLayout WidthRequest="180" HorizontalOptions="StartAndExpand">
+            <StackLayout WidthRequest="200" HorizontalOptions="StartAndExpand">
                 <Label Text="Ingredients:" FontAttributes="Bold"/>
-                
-                <ListView>
-                    <!--INSERT INGREDIENTS ITEMS-->
-                
+
+                <ListView x:Name="IngredientListView" 
+                ItemsSource="{Binding Item.IngredientList}"
+                VerticalOptions="FillAndExpand"
+                 HasUnevenRows="true"
+                 RefreshCommand="{Binding LoadIngredientCommand}"
+                 IsPullToRefreshEnabled="true"
+                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                 CachingStrategy="RecycleElement">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Quantity}" LineBreakMode="WordWrap"/>
+                                    <Label Text="{Binding Name}" LineBreakMode="WordWrap"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
                 </ListView>
-                
+
             </StackLayout>
             <StackLayout HorizontalOptions="EndAndExpand">
                 <Label Text="Contents:" FontAttributes="Bold"/>
                 <Label Text="{Binding Item.Description}"/>
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Preperation Time:"/>
+                    <Label Text="Preparation Time:"/>
                     <Label Text="{Binding Item.PrepTime}"/>
                     <Label Text="Minutes"/>
                 </StackLayout>

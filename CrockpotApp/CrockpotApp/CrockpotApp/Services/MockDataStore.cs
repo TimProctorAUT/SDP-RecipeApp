@@ -23,8 +23,67 @@ namespace CrockpotApp.Services
                                 Description ="Prepare a dish of Beef Nachos for 4 people in Just 35 Minutes",
                                 PrepTime = 10,
                                 CookTime = 25,
-                                IngredientList = new List<string>{"400g Beef Mince", "525g Salsa", "400g Red Kidney Beans", "1 Packet of Corn Chips", "1/2 Cup of Grated Cheese"},
-                                RecipeSteps = new List<string>{"StageOne", "StageTwo", "StageThree"}
+                                RecipeSteps = new List<string>{"StageOne", "StageTwo", "StageThree" },
+                                IngredientList = new List<Ingredient>
+                               {
+                                   new Ingredient
+                                   {
+                                       Name = "Beef Mince",
+                                       Quantity = "400g"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Salsa",
+                                       Quantity = "525g"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Red Kidney Beans",
+                                       Quantity = "400g"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Grated Cheese",
+                                       Quantity = "1/2 Cup"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Corn Chips",
+                                       Quantity = "1 Packet"
+                                   }
+                               }
+                            },
+
+                new Recipe {   Id = Guid.NewGuid().ToString(),
+                               Text = "Recipe Title",
+                               Summary = "Shown Under Title",
+                               Description ="Insert Recipe Summary which will be defined in the detailed recipe view",
+                               PrepTime = 20,
+                               CookTime = 10,RecipeSteps = new List<string>{"StageOne", "StageTwo", "StageThree"},
+                               IngredientList = new List<Ingredient>
+                               {
+                                   new Ingredient
+                                   {
+                                       Name = "IngredientOne",
+                                       Quantity = "400g"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "IngredientOne",
+                                       Quantity = "1/2 Cups"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "IngredientThree",
+                                       Quantity = "30g"
+                                   }
+                               }
                             },
 
                 new Recipe {   Id = Guid.NewGuid().ToString(),
@@ -33,9 +92,28 @@ namespace CrockpotApp.Services
                                Description ="Insert Recipe Summary which will be defined in the detailed recipe view",
                                PrepTime = 20,
                                CookTime = 10,
-                               IngredientList = new List<string>{"IngredientOne", "IngredientTwo", "IngredientThree", "IngredientFour"},
-                               RecipeSteps = new List<string>{"StageOne", "StageTwo", "StageThree"}
-                           },
+                               RecipeSteps = new List<string>{"StageOne", "StageTwo", "StageThree"},
+                               IngredientList = new List<Ingredient>
+                               {
+                                   new Ingredient
+                                   {
+                                       Name = "IngredientOne",
+                                       Quantity = "400g"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "IngredientOne",
+                                       Quantity = "1/2 Cups"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "IngredientThree",
+                                       Quantity = "30g"
+                                   }
+                               }
+                            },
 
                 new Recipe {   Id = Guid.NewGuid().ToString(),
                                Text = "Recipe Title",
@@ -43,10 +121,28 @@ namespace CrockpotApp.Services
                                Description ="Insert Recipe Summary which will be defined in the detailed recipe view",
                                PrepTime = 20,
                                CookTime = 10,
-                               IngredientList = new List<string>{"IngredientOne", "IngredientTwo", "IngredientThree", "IngredientFour"},
-                               RecipeSteps = new List<string>{"StageOne", "StageTwo", "StageThree"}
-                           },
+                               RecipeSteps = new List<string>{"StageOne", "StageTwo", "StageThree"},
+                               IngredientList = new List<Ingredient>
+                               {
+                                   new Ingredient
+                                   {
+                                       Name = "IngredientOne",
+                                       Quantity = "400g"
+                                   },
 
+                                   new Ingredient
+                                   {
+                                       Name = "IngredientOne",
+                                       Quantity = "1/2 Cups"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "IngredientThree",
+                                       Quantity = "30g"
+                                   }
+                               }
+                            }
             };
 
             foreach (var item in mockItems)
