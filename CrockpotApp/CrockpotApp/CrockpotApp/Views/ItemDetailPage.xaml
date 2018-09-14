@@ -9,7 +9,7 @@
             <Label Text="{Binding Item.Summary}" FontSize="Small"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <StackLayout WidthRequest="200" HorizontalOptions="StartAndExpand">
+            <StackLayout MinimumWidthRequest="150" HorizontalOptions="StartAndExpand">
                 <Label Text="Ingredients:" FontAttributes="Bold"/>
 
                 <ListView x:Name="IngredientListView" 
@@ -24,7 +24,7 @@
                         <DataTemplate>
                             <ViewCell>
                                 <StackLayout Orientation="Horizontal">
-                                    <Label Text="{Binding Quantity}" LineBreakMode="WordWrap"/>
+                                    <Label Text="{Binding Quantity}" LineBreakMode="NoWrap"/>
                                     <Label Text="{Binding Name}" LineBreakMode="WordWrap"/>
                                 </StackLayout>
                             </ViewCell>
@@ -37,17 +37,17 @@
                 <Label Text="Contents:" FontAttributes="Bold"/>
                 <Label Text="{Binding Item.Description}"/>
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Preparation Time:"/>
+                    <Label Text="Prep Time:" LineBreakMode="NoWrap"/>
                     <Label Text="{Binding Item.PrepTime}"/>
-                    <Label Text="Minutes"/>
+                    <Label Text="Mins"/>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Cooking Time:"/>
+                    <Label Text="Cooking Time:" LineBreakMode="NoWrap"/>
                     <Label Text="{Binding Item.CookTime}"/>
-                    <Label Text="Minutes"/>
+                    <Label Text="Mins"/>
                 </StackLayout>
+                <Button Text="Start Cooking" HorizontalOptions="End"/>
             </StackLayout>
         </StackLayout>
-
     </StackLayout>
 </ContentPage>
