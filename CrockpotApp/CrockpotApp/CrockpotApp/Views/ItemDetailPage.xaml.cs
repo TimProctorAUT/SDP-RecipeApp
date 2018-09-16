@@ -17,6 +17,8 @@ namespace CrockpotApp.Views
         {
             InitializeComponent();
 
+            MainImage.Source = ImageSource.FromFile(viewModel.Item.ImageURL);
+
             BindingContext = this.viewModel = viewModel;            
         }
 

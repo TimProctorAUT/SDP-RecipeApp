@@ -27,15 +27,20 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Padding="10">
-                                <Label Text="{Binding Text}" 
+                            <StackLayout Padding="2" Margin="10" BackgroundColor="LightGray">
+                                <StackLayout Padding="10" BackgroundColor="White">
+                                    <Image x:Name="FoodImage" Source="{Binding ImageURL}" Aspect="AspectFill"/>
+
+                                    <Label Text="{Binding Text}" 
                        LineBreakMode="NoWrap" 
                        Style="{DynamicResource ListItemTextStyle}" 
                        FontSize="16" />
-                                <Label Text="{Binding Summary}" 
+                                    <Label Text="{Binding Summary}" 
                        LineBreakMode="WordWrap"
                        Style="{DynamicResource ListItemDetailTextStyle}"
                        FontSize="13" />
+                                </StackLayout>
+
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

@@ -10,6 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\nachos.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="Images\nachos.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />  
   </ItemGroup>
 

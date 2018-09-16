@@ -40,8 +40,11 @@ namespace CrockpotApp.Views
             Item = item;
 
             InstructionText.Text = Item.RecipeSteps[CurrentPageNumber-1].InstructionText;
+            StepTitle.Text = Item.RecipeSteps[CurrentPageNumber - 1].Title;
             
             BindingContext = viewModel = new RecipeStepViewModel(CurrentPageNumber, TotalPageCount, Item);
+                        
+            MainImage.Source = ImageSource.FromFile(Item.ImageURL);
 
             if (CurrentPageNumber == TotalPageCount)
             {

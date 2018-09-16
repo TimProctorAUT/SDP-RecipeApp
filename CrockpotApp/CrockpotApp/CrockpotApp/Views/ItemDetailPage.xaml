@@ -6,6 +6,7 @@
     <StackLayout Spacing="20" Padding="15">
         <StackLayout>
             <Label Text="{Binding Item.Text}" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Image x:Name="MainImage" Aspect="Fill"/>
             <Label Text="{Binding Item.Summary}" FontSize="Small"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
