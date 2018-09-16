@@ -14,3 +14,4 @@ C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\CrockpotApp.dll
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\CrockpotApp.pdb
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\Views\RecipeStepPage.xaml.g.cs

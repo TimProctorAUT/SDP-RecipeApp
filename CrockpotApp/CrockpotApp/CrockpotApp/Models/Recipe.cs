@@ -10,9 +10,10 @@ namespace CrockpotApp.Models
         public string Description { get; set; }
         public string Summary { get; set; }
         public List<Ingredient> IngredientList { get; set; }
-        public List<string> RecipeSteps { get; set; }
+        public List<RecipeStep> RecipeSteps { get; set; }
         public int PrepTime { get; set; }
         public int CookTime { get; set; }
+        public int TotalSteps { get; set; }
 
     }
 }

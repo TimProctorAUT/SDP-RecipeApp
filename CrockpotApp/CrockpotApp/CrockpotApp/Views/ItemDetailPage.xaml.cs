@@ -17,7 +17,7 @@ namespace CrockpotApp.Views
         {
             InitializeComponent();
 
-            BindingContext = this.viewModel = viewModel;
+            BindingContext = this.viewModel = viewModel;            
         }
 
         public ItemDetailPage()
@@ -32,6 +32,11 @@ namespace CrockpotApp.Views
 
             viewModel = new ItemDetailViewModel(item);
             BindingContext = viewModel;
+        }
+
+        async void BeginCooking_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new RecipeStepPage(viewModel.Item, 1, viewModel.Item.TotalSteps)));
         }
     }
 }

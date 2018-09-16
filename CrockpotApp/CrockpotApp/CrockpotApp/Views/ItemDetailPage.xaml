@@ -46,7 +46,7 @@
                     <Label Text="{Binding Item.CookTime}"/>
                     <Label Text="Mins"/>
                 </StackLayout>
-                <Button Text="Start Cooking" HorizontalOptions="End"/>
+                <Button Text="Start Cooking" HorizontalOptions="End" Clicked="BeginCooking_Clicked"/>
             </StackLayout>
         </StackLayout>
     </StackLayout>

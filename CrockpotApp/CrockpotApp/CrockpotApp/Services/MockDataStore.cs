@@ -23,7 +23,36 @@ namespace CrockpotApp.Services
                                 Description ="Prepare a dish of Beef Nachos for 4 people in Just 35 Minutes",
                                 PrepTime = 10,
                                 CookTime = 25,
-                                RecipeSteps = new List<string>{"StageOne", "StageTwo", "StageThree" },
+                                TotalSteps = 3,
+                                RecipeSteps = new List<RecipeStep>
+                               {
+                                   new RecipeStep
+                                   {
+                                       PageID = 1,
+                                       Title = "Step 1",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 2,
+                                       Title = "Step 2",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 3,
+                                       Title = "Step 3",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+                               },
                                 IngredientList = new List<Ingredient>
                                {
                                    new Ingredient
@@ -64,7 +93,36 @@ namespace CrockpotApp.Services
                                Description ="Make 10 Fluffy and delicious Corn Fritters in under 15 minutes",
                                PrepTime = 5,
                                CookTime = 5,
-                               RecipeSteps = new List<string>{"StageOne", "StageTwo", "StageThree"},
+                               TotalSteps = 3,
+                               RecipeSteps = new List<RecipeStep>
+                               {
+                                   new RecipeStep
+                                   {
+                                       PageID = 1,
+                                       Title = "Step 1",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 2,
+                                       Title = "Step 2",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 3,
+                                       Title = "Step 3",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the custome to " +
+                                       "                                    understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+                               },
                                IngredientList = new List<Ingredient>
                                {
                                    new Ingredient
@@ -112,7 +170,36 @@ namespace CrockpotApp.Services
                                Description ="Make 12 curried pea and potato samosas in 50 minutes",
                                PrepTime = 30,
                                CookTime = 20,
-                               RecipeSteps = new List<string>{"StageOne", "StageTwo", "StageThree"},
+                               TotalSteps = 3,
+                               RecipeSteps = new List<RecipeStep>
+                               {
+                                   new RecipeStep
+                                   {
+                                       PageID = 1,
+                                       Title = "Step 1",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 2,
+                                       Title = "Step 2",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 3,
+                                       Title = "Step 3",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the custome to " +
+                                       "                                    understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+                               },
                                IngredientList = new List<Ingredient>
                                {
                                    new Ingredient
@@ -189,7 +276,36 @@ namespace CrockpotApp.Services
                                Description ="Cook a Potato topped shepherds pie which can feed 4 to 6 people in 30 minutes",
                                PrepTime = 20,
                                CookTime = 10,
-                               RecipeSteps = new List<string>{"StageOne", "StageTwo", "StageThree"},
+                               TotalSteps = 3,
+                               RecipeSteps = new List<RecipeStep>
+                               {
+                                   new RecipeStep
+                                   {
+                                       PageID = 1,
+                                       Title = "Step 1",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 2,
+                                       Title = "Step 2",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the custome to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 3,
+                                       Title = "Step 3",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+                               },
                                IngredientList = new List<Ingredient>
                                {
                                    new Ingredient
@@ -266,7 +382,36 @@ namespace CrockpotApp.Services
                                Description ="Insert Recipe Summary which will be defined in the detailed recipe view",
                                PrepTime = 20,
                                CookTime = 10,
-                               RecipeSteps = new List<string>{"StageOne", "StageTwo", "StageThree"},
+                               TotalSteps = 3,
+                               RecipeSteps = new List<RecipeStep>
+                               {
+                                   new RecipeStep
+                                   {
+                                       PageID = 1,
+                                       Title = "Step 1",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 2,
+                                       Title = "Step 2",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 3,
+                                       Title = "Step 3",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+                               },
                                IngredientList = new List<Ingredient>
                                {
                                    new Ingredient
@@ -295,7 +440,36 @@ namespace CrockpotApp.Services
                                Description ="Insert Recipe Summary which will be defined in the detailed recipe view",
                                PrepTime = 20,
                                CookTime = 10,
-                               RecipeSteps = new List<string>{"StageOne", "StageTwo", "StageThree"},
+                               TotalSteps = 3,
+                               RecipeSteps = new List<RecipeStep>
+                               {
+                                   new RecipeStep
+                                   {
+                                       PageID = 1,
+                                       Title = "Step 1",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 2,
+                                       Title = "Step 2",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 3,
+                                       Title = "Step 3",
+                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       TotalPages = 3
+                                   },
+                               },
                                IngredientList = new List<Ingredient>
                                {
                                    new Ingredient
