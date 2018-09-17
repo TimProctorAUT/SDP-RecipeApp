@@ -13,6 +13,8 @@ namespace CrockpotApp.Services
         public MockDataStore()
         {
             items = new List<Recipe>();
+
+            //Hard-Coded Recipes
             var mockItems = new List<Recipe>
             {
 
@@ -431,12 +433,14 @@ namespace CrockpotApp.Services
                             },
 
                 new Recipe {   Id = Guid.NewGuid().ToString(),
-                               Text = "Recipe Title",
-                               Summary = "Shown Under Title",
-                               Description ="Insert Recipe Summary which will be defined in the detailed recipe view",
-                               ImageURL = "placeholder.png",
-                               PrepTime = 20,
-                               CookTime = 10,
+                               Text = "Mexican Bean & Corn Pie",
+                               Summary = "Cook a Bean and Corn Pie for 4 People in under 40 minutes",
+                               Description ="Here’s another great way to enjoy Mexican. A great vegetarian dish which is super easy to make but so tasty! " +
+                                                "With 5 simple ingredients you can create delicious pies where one is never enough! " +
+                                                       "for 4 People in under 40 minutes. ",
+                               ImageURL = "bean_corn_pie.jpg",
+                               PrepTime = 10,
+                               CookTime = 25,
                                TotalSteps = 3,
                                RecipeSteps = new List<RecipeStep>
                                {
@@ -444,8 +448,10 @@ namespace CrockpotApp.Services
                                    {
                                        PageID = 1,
                                        Title = "Step 1",
-                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
-                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       InstructionText = "Preheat the oven to 200°C (fan bake). Cut 4 (17cm diameter) circles out of the pastry, " +
+                                                            "re-rolling the pastry as necessary. Line 4 individual pie dishes (8cm diameter) with " +
+                                                                "the pastry, allowing the excess pastry to hang over the sides of the dishes. Set " +
+                                                                    "aside while preparing the filling",
                                        TotalPages = 3
                                    },
 
@@ -453,8 +459,8 @@ namespace CrockpotApp.Services
                                    {
                                        PageID = 2,
                                        Title = "Step 2",
-                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
-                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       InstructionText = "Mix together Mexican Style Red Kidney Beans and Frozen Corn. " +
+                                                            "Divide the filling between the pastry cases",
                                        TotalPages = 3
                                    },
 
@@ -462,8 +468,9 @@ namespace CrockpotApp.Services
                                    {
                                        PageID = 3,
                                        Title = "Step 3",
-                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
-                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       InstructionText = "Sprinkle grated cheese over the beans. Fold in excess pastry over the bean filling. Brush pastry " +
+                                                            "top with the milk. Bake for 20-25 minutes until pastry is golden and " +
+                                                                "filling hot.",
                                        TotalPages = 3
                                    },
                                },
@@ -471,31 +478,44 @@ namespace CrockpotApp.Services
                                {
                                    new Ingredient
                                    {
-                                       Name = "IngredientOne",
-                                       Quantity = "400g"
+                                       Name = "Puff Pastry",
+                                       Quantity = "2 Sheets"
                                    },
 
                                    new Ingredient
                                    {
-                                       Name = "IngredientOne",
-                                       Quantity = "1/2 Cups"
+                                       Name = "Mexican Style Kidney Beans",
+                                       Quantity = "410g"
                                    },
 
                                    new Ingredient
                                    {
-                                       Name = "IngredientThree",
-                                       Quantity = "30g"
+                                       Name = "Frozen Corn",
+                                       Quantity = "1 Cup"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Grated Cheese",
+                                       Quantity = "75g"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Milk",
+                                       Quantity = "2 Tbsp"
                                    }
                                }
                             },
 
                 new Recipe {   Id = Guid.NewGuid().ToString(),
-                               Text = "Recipe Title",
-                               Summary = "Shown Under Title",
-                               Description ="Insert Recipe Summary which will be defined in the detailed recipe view",
-                               ImageURL = "placeholder.png",
-                               PrepTime = 20,
-                               CookTime = 10,
+                               Text = "Chicken Sausage Rolls",
+                               Summary = "Bake a Tasty and Crispy Chicken sausage roll, Makes 3 Long Rolls in 45 Minutes",
+                               Description ="Try our gourmet twist on the humble sausage roll - packed with unique ingredients such as courgette, " +
+                                                  "poppy seeds and sesame seeds! So crispy and delicious",
+                               ImageURL = "chicken_sausage_roll.jpg",
+                               PrepTime = 15,
+                               CookTime = 30,
                                TotalSteps = 3,
                                RecipeSteps = new List<RecipeStep>
                                {
@@ -503,8 +523,8 @@ namespace CrockpotApp.Services
                                    {
                                        PageID = 1,
                                        Title = "Step 1",
-                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
-                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       InstructionText = "Preheat oven to 170°C. Heat oil in a small frying pan over a medium heat. " +
+                                                            "Add onion and sauté until soft.",
                                        TotalPages = 3
                                    },
 
@@ -512,17 +532,19 @@ namespace CrockpotApp.Services
                                    {
                                        PageID = 2,
                                        Title = "Step 2",
-                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
-                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       InstructionText = "In a large bowl, combine onion with the chicken mince, courgette, " +
+                                                            "salt and breadcrumbs. Mix well, and divide mince into 3 portions.",
                                        TotalPages = 3
-                                   },
+                                   }, 
 
                                    new RecipeStep
                                    {
                                        PageID = 3,
                                        Title = "Step 3",
-                                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
-                                                                                "understand how to cook or prepare the food at the current stage.",
+                                       InstructionText = "Lay out pastry sheets and spread chicken mix across the centre of each. " +
+                                                            "Fold sheets in half away from you, then roll in half again so there is a double layer of " +
+                                                                "pastry at the base of the sausage roll. Brush top of rolls with egg and " +
+                                                                    "sprinkle the combined seeds over each roll. Cook in oven for 30 minutes.",
                                        TotalPages = 3
                                    },
                                },
@@ -530,23 +552,183 @@ namespace CrockpotApp.Services
                                {
                                    new Ingredient
                                    {
-                                       Name = "IngredientOne",
-                                       Quantity = "400g"
+                                       Name = "Olive Oil",
+                                       Quantity = "1 Tbsp"
                                    },
 
                                    new Ingredient
                                    {
-                                       Name = "IngredientOne",
-                                       Quantity = "1/2 Cups"
+                                       Name = "Onion",
+                                       Quantity = "1 small"
                                    },
 
                                    new Ingredient
                                    {
-                                       Name = "IngredientThree",
-                                       Quantity = "30g"
+                                       Name = "Chicken Mince",
+                                       Quantity = "500g"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Courgette",
+                                       Quantity = "1"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Sea Salt",
+                                       Quantity = "2 tsp"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Breadcrumbs",
+                                       Quantity = "1/2 Cup"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Puff Pastry",
+                                       Quantity = "3 Sheets"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Egg",
+                                       Quantity = "1"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Poppy Seeds",
+                                       Quantity = "1/2 Tbsp"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Sesame Seeds",
+                                       Quantity = "1/2 Tbsp"
                                    }
                                }
-                            }
+                            },
+
+                new Recipe {   Id = Guid.NewGuid().ToString(),
+                               Text = "Rosemary & Garlic Pizza Bread",
+                               Summary = "Cook a Rosemary & Garlic Pizza Bread in under 30 Minutes",
+                               Description ="Using our simple pizza dough recipe, we've whipped up a delicious Rosemary and Garlic Pizza Bread in under 30 Minutes",
+                               ImageURL = "garlic_pizza_bread.jpg",
+                               PrepTime = 5,
+                               CookTime = 25,
+                               TotalSteps = 3,
+                               RecipeSteps = new List<RecipeStep>
+                               {
+                                   new RecipeStep
+                                   {
+                                       PageID = 1,
+                                       Title = "Step 1",
+                                       InstructionText = "Place flour, yeast, salt and sugar in a large bowl and stir to mix. Pour in the oil and water." +
+                                                                "Mix to form a soft dough.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 2,
+                                       Title = "Step 2",
+                                       InstructionText = "Place flour, yeast, salt and sugar in a large bowl and stir to mix. " +
+                                                                "Pour in the oil and water. Mix to form a soft dough.",
+                                       TotalPages = 3
+                                   },
+
+                                   new RecipeStep
+                                   {
+                                       PageID = 3,
+                                       Title = "Step 3",
+                                       InstructionText = "Preheat oven to 200°C. When the dough has doubled in size, place on a greased baking " +
+                                                                "sheet and press out to form a circle. Brush with olive oil and sprinkle with sea " +
+                                                                            "salt, rosemary leaves and chopped garlic. Bake for approximately 15-20 " +
+                                                                                    "minutes until cooked and golden",
+                                       TotalPages = 3
+                                   },
+                               },
+                               IngredientList = new List<Ingredient>
+                               {
+                                   new Ingredient
+                                   {
+                                       Name = "Strong Flour",
+                                       Quantity = "2 1/2 Cups"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Yeast",
+                                       Quantity = "8g"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Salt",
+                                       Quantity = "1/4 tsp"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Sugar",
+                                       Quantity = "1 tsp"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Olive Oil",
+                                       Quantity = "1 Tbsp"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Garlic",
+                                       Quantity = "1-2 Cloves"
+                                   },
+
+                                   new Ingredient
+                                   {
+                                       Name = "Lukewarm Water",
+                                       Quantity = "1 Cup"
+                                   }
+                               }
+             },
+
+
+                //------------------------------------------------------
+                //                   RECIPE TEMPLATE
+                //-----------------------------------------------------
+                //new Recipe {   Id = Guid.NewGuid().ToString(),
+                //               Text = "Recipe Title",
+                //               Summary = "Shown Under Title",
+                //               Description ="Insert Recipe Summary which will be defined in the detailed recipe view",
+                //               ImageURL = "placeholder.png",
+                //               PrepTime = 20,
+                //               CookTime = 10,
+                //               TotalSteps = 3,
+                //               RecipeSteps = new List<RecipeStep>
+                //               {
+                //                   new RecipeStep
+                //                   {
+                //                       PageID = 1,
+                //                       Title = "Step 1",
+                //                       InstructionText = "Instruction One Text Following the Cooking Instructions given to the customer to " +
+                //                                                                "understand how to cook or prepare the food at the current stage.",
+                //                       TotalPages = 3
+                //                   },
+                //               },
+                //               IngredientList = new List<Ingredient>
+                //               {
+                //                   new Ingredient
+                //                   {
+                //                       Name = "IngredientOne",
+                //                       Quantity = "400g"
+                //                   }
+                //               }
+                //            }
             };
 
             foreach (var item in mockItems)

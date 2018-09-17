@@ -10,11 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\nachos.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ApplicationDefinition Include="Images\nachos.jpg" />
+    <Compile Remove="Images\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <None Remove="Images\**" />
   </ItemGroup>
 
   <ItemGroup>

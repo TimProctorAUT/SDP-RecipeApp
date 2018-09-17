@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout Padding="10">
 
-            <Label x:Name="StepTitle" HorizontalTextAlignment="Center"/>
+            <Label x:Name="StepTitle" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold"/>
 
             <Image x:Name="MainImage" Aspect="Fill"/>
 
