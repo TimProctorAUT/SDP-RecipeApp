@@ -12,8 +12,8 @@ namespace CrockpotApp.Models
     ///Variables:
     ///1) PageID           - Integer value defining the current page/step number this value is.
     ///2) TotalPages       - Integer value defining the Total number of steps/pages in a recipe.
-    ///3) Title            - String value defining
-    ///4) InstructionText  - String value defining 
+    ///3) Title            - String value defining the Title given to this specific stage of cooking
+    ///4) InstructionText  - String value hold the main text of instructions for this specific page/step in the recipe
     /// </remarks>
     public class RecipeStep
     {

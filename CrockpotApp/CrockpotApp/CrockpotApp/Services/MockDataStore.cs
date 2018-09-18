@@ -6,10 +6,16 @@ using CrockpotApp.Models;
 
 namespace CrockpotApp.Services
 {
+    /// <summary>
+    /// MockDataStore Class that extends the <see cref="IDataStore{T}"/> Interface
+    /// </summary>
     public class MockDataStore : IDataStore<Recipe>
     {
         List<Recipe> items;
 
+        /// <summary>
+        /// MockDataStore Constructor
+        /// </summary>
         public MockDataStore()
         {
             items = new List<Recipe>();
@@ -737,6 +743,11 @@ namespace CrockpotApp.Services
             }
         }
 
+        /// <summary>
+        /// AddItemAsync Method
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns></returns>
         public async Task<bool> AddItemAsync(Recipe item)
         {
             items.Add(item);
@@ -744,6 +755,11 @@ namespace CrockpotApp.Services
             return await Task.FromResult(true);
         }
 
+        /// <summary>
+        /// UpdateItemAsync Method
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns></returns>
         public async Task<bool> UpdateItemAsync(Recipe item)
         {
             var oldItem = items.Where((Recipe arg) => arg.Id == item.Id).FirstOrDefault();
@@ -753,6 +769,11 @@ namespace CrockpotApp.Services
             return await Task.FromResult(true);
         }
 
+        /// <summary>
+        /// DeleteItemAsync Method
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<bool> DeleteItemAsync(string id)
         {
             var oldItem = items.Where((Recipe arg) => arg.Id == id).FirstOrDefault();
@@ -761,11 +782,21 @@ namespace CrockpotApp.Services
             return await Task.FromResult(true);
         }
 
+        /// <summary>
+        /// GetItemAsync Method - ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<Recipe> GetItemAsync(string id)
         {
             return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
         }
 
+        /// <summary>
+        /// GetItemAsync Method - Boolean
+        /// </summary>
+        /// <param name="forceRefresh"></param>
+        /// <returns></returns>
         public async Task<IEnumerable<Recipe>> GetItemsAsync(bool forceRefresh = false)
         {
             return await Task.FromResult(items);
