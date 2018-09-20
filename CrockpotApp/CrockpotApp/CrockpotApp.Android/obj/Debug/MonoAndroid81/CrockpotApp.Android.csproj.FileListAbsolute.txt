@@ -100,9 +100,15 @@ C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
-C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\bin\Debug\netstandard2.0\CrockpotApp.dll
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\res\drawable\nachos.png
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\res\drawable\placeholder.png
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\res\drawable\corn_fritters.png
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\res\drawable\potato_pea_samosa.jpg
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\res\drawable\shepherds_pie.jpg
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\res\drawable\bean_corn_pie.jpg
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\res\drawable\chicken_sausage_roll.jpg
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\res\drawable\garlic_pizza_bread.jpg
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\linksrc\CrockpotApp.Android.pdb
-C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\bin\Debug\CrockpotApp.dll.mdb
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\linksrc\CrockpotApp.dll.mdb
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

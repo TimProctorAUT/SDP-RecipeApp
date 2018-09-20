@@ -43,9 +43,10 @@ namespace CrockpotApp.Views
             StepTitle.Text = Item.RecipeSteps[CurrentPageNumber - 1].Title;
             
             BindingContext = viewModel = new RecipeStepViewModel(CurrentPageNumber, TotalPageCount, Item);
-                        
+            
+            //TODO: Move to Own Method, Add Placeholder Image if URL = NULL or Image Doesnt Exist
             MainImage.Source = ImageSource.FromFile(Item.ImageURL);
-
+            
             if (CurrentPageNumber == TotalPageCount)
             {
                 NextStep.Text = "Finish";
