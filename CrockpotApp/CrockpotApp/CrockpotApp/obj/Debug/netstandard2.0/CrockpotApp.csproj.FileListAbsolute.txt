@@ -4,14 +4,15 @@ C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\CrockpotApp.csprojAssemblyReference.cache
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\Views\CategoryPage.xaml.g.cs
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\Views\RecipeStepPage.xaml.g.cs
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\CrockpotApp.csproj.CoreCompileInputs.cache
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\CrockpotApp.AssemblyInfoInputs.cache
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\CrockpotApp.AssemblyInfo.cs
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\CrockpotApp.dll
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\CrockpotApp.pdb
-C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\Views\RecipeStepPage.xaml.g.cs

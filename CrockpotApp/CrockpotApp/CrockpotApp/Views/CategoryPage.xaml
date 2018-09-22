@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrockpotApp.Views.CategoryPage">
+    <ContentPage.Content>
+        <ScrollView>
+            
+                <StackLayout>
+                    <Button Text="Breakfast"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Command="{Binding NavigateCommand}" />
+
+                    <Button Text="Lunch"
+                    Command="{Binding NavigateCommand}" />
+
+                    <Button Text="Dinner"
+                    Command="{Binding NavigateCommand}"/>
+
+                    <Button Text="Dessert"
+                    Command="{Binding NavigateCommand}"/>
+
+                    <Button Text="Quick and Easy"
+                    Command="{Binding NavigateCommand}" />
+
+                    <Button Text="Vegetarian"
+                    Command="{Binding NavigateCommand}"/>
+                </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
