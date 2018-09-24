@@ -1,3 +1,39 @@
+<<<<<<< HEAD
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/bin/Debug/netstandard2.0/CrockpotApp.deps.json
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/bin/Debug/netstandard2.0/CrockpotApp.dll
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/bin/Debug/netstandard2.0/CrockpotApp.pdb
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/CrockpotApp.csprojAssemblyReference.cache
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/App.xaml.g.cs
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/Views/AboutPage.xaml.g.cs
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/Views/ItemDetailPage.xaml.g.cs
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/Views/ItemsPage.xaml.g.cs
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/Views/MainPage.xaml.g.cs
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/Views/NewItemPage.xaml.g.cs
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/CrockpotApp.csproj.CoreCompileInputs.cache
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/CrockpotApp.AssemblyInfoInputs.cache
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/CrockpotApp.AssemblyInfo.cs
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/XamlC.stamp
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/CrockpotApp.dll
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/CrockpotApp.pdb
+C:/Users/OEM/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/Views/RecipeStepPage.xaml.g.cs
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/bin/Debug/netstandard2.0/CrockpotApp.deps.json
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/bin/Debug/netstandard2.0/CrockpotApp.dll
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/bin/Debug/netstandard2.0/CrockpotApp.pdb
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/CrockpotApp.csprojAssemblyReference.cache
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/Views/AboutPage.xaml.g.cs
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/Views/ItemDetailPage.xaml.g.cs
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/Views/ItemsPage.xaml.g.cs
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/Views/MainPage.xaml.g.cs
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/Views/NewItemPage.xaml.g.cs
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/Views/RecipeStepPage.xaml.g.cs
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/CrockpotApp.csproj.CoreCompileInputs.cache
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/CrockpotApp.AssemblyInfoInputs.cache
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/CrockpotApp.AssemblyInfo.cs
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/CrockpotApp.dll
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/CrockpotApp.pdb
+/Users/Aaron/Documents/GitHub/SDP-RecipeApp/CrockpotApp/CrockpotApp/CrockpotApp/obj/Debug/netstandard2.0/obj/Debug/netstandard2.0/App.xaml.g.cs
+=======
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\bin\Debug\netstandard2.0\CrockpotApp.deps.json
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\bin\Debug\netstandard2.0\CrockpotApp.dll
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\bin\Debug\netstandard2.0\CrockpotApp.pdb
@@ -16,3 +52,5 @@ C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\CrockpotApp.dll
 C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\CrockpotApp.pdb
+>>>>>>> f5687ecc27e8a1d7f9ab50709978429d3d04080b
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\obj\Debug\netstandard2.0\obj\Debug\netstandard2.0\App.xaml.g.cs

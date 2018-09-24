@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "f3497a25909d06f5676e0372b6308d3a1b5146dc"
+    "signature": "8fe66edc926737fa59fff5d778a6e982d248bc7f"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "CrockpotApp/1.0.0": {
         "dependencies": {
+          "LiveXAML": "2.1.41",
           "NETStandard.Library": "2.0.3",
           "Xamarin.Forms": "3.1.0.697729"
         },
@@ -16,6 +17,7 @@
           "CrockpotApp.dll": {}
         }
       },
+      "LiveXAML/2.1.41": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "NETStandard.Library/2.0.3": {
         "dependencies": {
@@ -36,6 +38,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "LiveXAML/2.1.41": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tIUflJk1A2nFqbIJrN96E8SUmneDvgLzFEnYgQqeOqnGhZQTAHUk6iJVTrGakZMrIJUzIXI59g6QkLQ6WxJluQ==",
+      "path": "livexaml/2.1.41",
+      "hashPath": "livexaml.2.1.41.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

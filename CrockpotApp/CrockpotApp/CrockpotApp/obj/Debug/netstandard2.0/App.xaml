@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CrockpotApp.App" xmlns:__xl="clr-namespace:__livexaml" __xl:Runtime.Register="C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\App.xaml">
+  <Application.Resources>
+    <ResourceDictionary>
+      <!--Global Styles-->
+      <Color x:Key="NavigationPrimary">#232323</Color>
+      <Style TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+        <Setter Property="BarTextColor" Value="White" />
+      </Style>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

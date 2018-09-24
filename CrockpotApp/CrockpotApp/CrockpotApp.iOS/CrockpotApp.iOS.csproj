@@ -124,6 +124,19 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default-Portrait.png" />
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\bean_corn_pie.png" />
+    <BundleResource Include="Resources\chicken_sausage_roll.png" />
+    <BundleResource Include="Resources\corn_fritters.png" />
+    <BundleResource Include="Resources\garlic_pizza_bread.png" />
+    <BundleResource Include="Resources\nachos.png" />
+    <BundleResource Include="Resources\placeholder.png" />
+    <BundleResource Include="Resources\potato_pea_samosa.png" />
+    <BundleResource Include="Resources\shepherds_pie.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -137,7 +150,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\CrockpotApp\CrockpotApp.csproj">
-      <Project>{F7CD7198-69B9-43C4-8C53-0B655259A3B1}</Project>
+      <Project>{45B85BDF-9C1E-481F-923A-9E74E22E3F62}</Project>
       <Name>CrockpotApp</Name>
     </ProjectReference>
   </ItemGroup>

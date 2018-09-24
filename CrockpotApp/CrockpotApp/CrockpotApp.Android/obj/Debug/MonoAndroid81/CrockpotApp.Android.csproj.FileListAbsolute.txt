@@ -1,0 +1,2 @@
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\CrockpotApp.Android.csprojAssemblyReference.cache
+C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp.Android\obj\Debug\MonoAndroid81\res.flag

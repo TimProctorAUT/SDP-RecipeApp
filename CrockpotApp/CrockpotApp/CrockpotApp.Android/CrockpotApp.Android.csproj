@@ -93,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CrockpotApp\CrockpotApp.csproj">
-      <Project>{F7CD7198-69B9-43C4-8C53-0B655259A3B1}</Project>
+      <Project>{45B85BDF-9C1E-481F-923A-9E74E22E3F62}</Project>
       <Name>CrockpotApp</Name>
     </ProjectReference>
   </ItemGroup>

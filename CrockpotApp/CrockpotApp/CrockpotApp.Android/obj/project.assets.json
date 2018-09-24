@@ -2,6 +2,12 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
+      "LiveXAML/2.1.41": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
         "type": "package",
         "dependencies": {
@@ -345,6 +351,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "LiveXAML": "2.1.41",
           "Xamarin.Forms": "3.1.0.697729"
         },
         "compile": {
@@ -357,6 +364,21 @@
     }
   },
   "libraries": {
+    "LiveXAML/2.1.41": {
+      "sha512": "tIUflJk1A2nFqbIJrN96E8SUmneDvgLzFEnYgQqeOqnGhZQTAHUk6iJVTrGakZMrIJUzIXI59g6QkLQ6WxJluQ==",
+      "type": "package",
+      "path": "livexaml/2.1.41",
+      "files": [
+        ".signature.p7s",
+        "build/LiveXAML.targets",
+        "build/XamarinLive.Build.dll",
+        "build/XamarinLive.Common.dll",
+        "build/minified.cs",
+        "build/minified.tpl.cs",
+        "livexaml.2.1.41.nupkg.sha512",
+        "livexaml.nuspec"
+      ]
+    },
     "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
       "sha512": "GIz8xfnOLJH5yWC0ocIR80hJlYQ2Lz2HQKjW2/vi0rxYXR6nF/D4aOFlTx1PIA6A9FLgFRrajSJyCfx460qycw==",
       "type": "package",

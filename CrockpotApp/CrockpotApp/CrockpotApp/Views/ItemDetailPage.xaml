@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CrockpotApp.Views.ItemDetailPage"
@@ -38,16 +38,16 @@
                 <Label Text="Contents:" FontAttributes="Bold"/>
                 <Label Text="{Binding Item.Description}"/>
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Prep Time:" LineBreakMode="NoWrap"/>
+                    <Label Text="Prep Time:" LineBreakMode="WordWrap"/>
                     <Label Text="{Binding Item.PrepTime}"/>
-                    <Label Text="Mins"/>
+                    <Label Text="Mins" LineBreakMode="WordWrap"/>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Cooking Time:" LineBreakMode="NoWrap"/>
+                    <Label Text="Cooking Time:" LineBreakMode="WordWrap"/>
                     <Label Text="{Binding Item.CookTime}"/>
-                    <Label Text="Mins"/>
+                    <Label Text="Mins" LineBreakMode="WordWrap"/>
                 </StackLayout>
-                <Button Text="Start Cooking" HorizontalOptions="End" Clicked="BeginCooking_Clicked"/>
+                <Button Text="Start Cooking" VerticalOptions="EndAndExpand" HorizontalOptions="End" Clicked="BeginCooking_Clicked"/>
             </StackLayout>
         </StackLayout>
     </StackLayout>

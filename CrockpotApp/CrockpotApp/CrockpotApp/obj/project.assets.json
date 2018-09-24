@@ -2,6 +2,12 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "LiveXAML/2.1.41": {
+        "type": "package",
+        "build": {
+          "build/LiveXAML.targets": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -46,6 +52,21 @@
     }
   },
   "libraries": {
+    "LiveXAML/2.1.41": {
+      "sha512": "tIUflJk1A2nFqbIJrN96E8SUmneDvgLzFEnYgQqeOqnGhZQTAHUk6iJVTrGakZMrIJUzIXI59g6QkLQ6WxJluQ==",
+      "type": "package",
+      "path": "livexaml/2.1.41",
+      "files": [
+        ".signature.p7s",
+        "build/LiveXAML.targets",
+        "build/XamarinLive.Build.dll",
+        "build/XamarinLive.Common.dll",
+        "build/minified.cs",
+        "build/minified.tpl.cs",
+        "livexaml.2.1.41.nupkg.sha512",
+        "livexaml.nuspec"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -338,6 +359,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "LiveXAML >= 2.1.41",
       "NETStandard.Library >= 2.0.3",
       "Xamarin.Forms >= 3.1.0.697729"
     ]
@@ -383,6 +405,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "LiveXAML": {
+            "target": "Package",
+            "version": "[2.1.41, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
