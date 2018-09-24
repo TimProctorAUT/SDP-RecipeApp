@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using CrockpotApp.Views;
+using CrockpotApp.Unit_Tests;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CrockpotApp
@@ -14,11 +15,13 @@ namespace CrockpotApp
             InitializeComponent();
 
 
+
             MainPage = new MainPage();
         }
 
         protected override void OnStart()
         {
+
             // Handle when your app starts
         }
 
