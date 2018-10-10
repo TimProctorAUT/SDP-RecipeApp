@@ -24,5 +24,11 @@ namespace CrockpotApp.Models
         public string Title { get; set; }
 
         public string InstructionText { get; set; }
+
+        public bool HasTimer { get; set; }
+
+        public int TimerMinuteCount { get; set; }
+
+        public int TimerSecondCount { get; set; }
     }
 }

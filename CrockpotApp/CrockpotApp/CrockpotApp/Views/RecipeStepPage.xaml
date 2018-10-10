@@ -14,6 +14,13 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
+            <StackLayout x:Name="TimerBlock" Orientation="Vertical" IsVisible="false" BackgroundColor="#808080">
+                
+                <Label x:Name="TimerText" HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+                <Button x:Name="TimerButton" HorizontalOptions="CenterAndExpand" Text="Start" Clicked="TimerButton_Clicked"/>
+                
+            </StackLayout>
+
             <StackLayout Orientation="Horizontal">
                 <Button x:Name="BackButton" Clicked="Back_Clicked" Text="Back"/>
                 <Button x:Name="NextStep" HorizontalOptions="EndAndExpand" Clicked="NextStep_Clicked" Text="Next Step"/>

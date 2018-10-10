@@ -10,6 +10,7 @@ using Xamarin.Forms.Xaml;
 using CrockpotApp.ViewModels;
 using CrockpotApp.Models;
 using CrockpotApp.Views;
+using System.Threading;
 
 namespace CrockpotApp.Views
 {
@@ -21,7 +22,9 @@ namespace CrockpotApp.Views
         public int TotalPageCount { get; set; }
         Recipe Item { get; set; }
 
-		public RecipeStepPage ()
+        CancellationTokenSource cts;
+
+        public RecipeStepPage ()
 		{
             CurrentPageNumber = 0;
             TotalPageCount = 0;
@@ -51,7 +54,33 @@ namespace CrockpotApp.Views
             {
                 NextStep.Text = "Finish";
             }
+
+            //Enable Timer if Applicable to Recipe Step
+            if(Item.RecipeSteps[CurrentPageNumber - 1].HasTimer)
+            {
+                TimerBlock.IsVisible = true;
+                TimerText.Text = Item.RecipeSteps[CurrentPageNumber - 1].TimerMinuteCount.ToString().PadLeft(2, '0')+":"+Item.RecipeSteps[CurrentPageNumber - 1].TimerSecondCount.ToString().PadLeft(2, '0');
+            }
         }
+
+        private async Task StartTimer(CancellationToken token, int timerMinuteCount, int timerSecondCount)
+        {
+            TimerButton.Text = "Stop";
+
+            while (timerSecondCount >= 0 && !token.IsCancellationRequested)
+            {
+                if (timerSecondCount == 0 && timerMinuteCount != 0)
+                {
+                    timerSecondCount = 59;
+                    timerMinuteCount--;
+                }
+                Device.BeginInvokeOnMainThread(() => TimerText.Text = timerMinuteCount.ToString().PadLeft(2, '0') +":"+timerSecondCount.ToString().PadLeft(2, '0'));
+                await Task.Delay(1000, token);
+                
+                timerSecondCount--;
+            }
+        }
+
         async void NextStep_Clicked(object sender, EventArgs e)
         {
 
@@ -76,6 +105,33 @@ namespace CrockpotApp.Views
         async void Back_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();
+        }
+
+        private async void TimerButton_Clicked(object sender, EventArgs e)
+        {
+            if (cts == null)
+            {
+                cts = new CancellationTokenSource();
+                try
+                {
+                    await StartTimer(cts.Token, Item.RecipeSteps[CurrentPageNumber - 1].TimerMinuteCount, Item.RecipeSteps[CurrentPageNumber - 1].TimerSecondCount);
+                }
+                catch (OperationCanceledException)
+                {
+
+                }
+                finally
+                {
+                    cts = null;
+                    TimerButton.Text = "Start";
+                }
+            }
+            else
+            {
+                cts.Cancel();
+                TimerText.Text = Item.RecipeSteps[CurrentPageNumber - 1].TimerMinuteCount.ToString().PadLeft(2, '0') + ":" + Item.RecipeSteps[CurrentPageNumber - 1].TimerSecondCount.ToString().PadLeft(2, '0');
+                cts = null;
+            }
         }
     }
 }

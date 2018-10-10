@@ -50,7 +50,10 @@ namespace CrockpotApp.Services
                                        Title = "Step 2",
                                        InstructionText = "Reduce heat. Pour over Salsa and add Kidney Beans. Stir and simmer " +
                                                                     "for 15-20 minutes, until the mince is cooked.",
-                                       TotalPages = 3
+                                       TotalPages = 3,
+                                       HasTimer = true,
+                                       TimerMinuteCount = 15,
+                                       TimerSecondCount = 0
                                    },
 
                                    new RecipeStep
@@ -60,9 +63,8 @@ namespace CrockpotApp.Services
                                        InstructionText = "Place corn chips in an oven proof dish. Spoon over the nacho mix. " +
                                                                 "Scatter over grated cheese. Place under a preheated grill, " +
                                                                         "and grill for 3-4 minutes until the cheese is melted.",
-                                       TotalPages = 3
-                                   },
-                               },
+                                       TotalPages = 3},
+                                    },
                                 IngredientList = new List<Ingredient>
                                {
                                    new Ingredient
