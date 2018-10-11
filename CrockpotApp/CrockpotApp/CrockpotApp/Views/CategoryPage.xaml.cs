@@ -12,7 +12,7 @@ namespace CrockpotApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CategoryPage : ContentPage
     {
-        public ICommand NavigateCommand
+        public Command NavigateCommand
         {
             private set; get;
         }
@@ -21,10 +21,9 @@ namespace CrockpotApp.Views
         {
             InitializeComponent();
 
-            NavigateCommand = new Command<Type>(async (Type pageType) =>
+            NavigateCommand = new Command<string>(async (string mealType) =>
             {
-                Page page = (Page)Activator.CreateInstance(pageType);
-                await Navigation.PushAsync(page);
+                await Navigation.PushAsync(new ItemsPage(mealType));
             });
 
             BindingContext = this;

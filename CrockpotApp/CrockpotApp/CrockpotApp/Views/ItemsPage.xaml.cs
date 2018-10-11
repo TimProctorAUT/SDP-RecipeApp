@@ -25,6 +25,13 @@ namespace CrockpotApp.Views
             BindingContext = viewModel = new ItemsViewModel();
         }
 
+        public ItemsPage(string mealType)
+        {
+            InitializeComponent();
+
+            BindingContext = viewModel = new ItemsViewModel(mealType);
+        }
+
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
             var item = args.SelectedItem as Recipe;

@@ -29,6 +29,14 @@ namespace CrockpotApp.ViewModels
             });
         }
 
+        public ItemsViewModel(string mealType)
+        {
+            Title = "Crockpot - " + mealType;
+            Items = new ObservableCollection<Recipe>();
+            LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand(mealType));
+                       
+        }
+
         async Task ExecuteLoadItemsCommand()
         {
             if (IsBusy)
@@ -43,6 +51,35 @@ namespace CrockpotApp.ViewModels
                 foreach (var item in items)
                 {
                     Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
+        async Task ExecuteLoadItemsCommand(string mealType)
+        {
+            if (IsBusy)
+                return;
+
+            IsBusy = true;
+
+            try
+            {
+                Items.Clear();
+                var items = await DataStore.GetItemsAsync(true);
+                foreach (var item in items)
+                {
+                    if (item.mealType == mealType)
+                    {
+                        Items.Add(item);
+                    }                    
                 }
             }
             catch (Exception ex)

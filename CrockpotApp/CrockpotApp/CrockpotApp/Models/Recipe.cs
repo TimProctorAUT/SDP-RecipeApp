@@ -32,5 +32,6 @@ namespace CrockpotApp.Models
         public int PrepTime { get; set; }
         public int CookTime { get; set; }
         public int TotalSteps { get; set; }
+        public string mealType { get; set; }
     }
 }

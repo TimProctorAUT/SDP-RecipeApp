@@ -11,7 +11,7 @@ namespace CrockpotApp.Services
     /// </summary>
     public class MockDataStore : IDataStore<Recipe>
     {
-        List<Recipe> items;
+        List<Recipe> items; 
 
         /// <summary>
         /// MockDataStore Constructor
@@ -33,6 +33,7 @@ namespace CrockpotApp.Services
                                 PrepTime = 10,
                                 CookTime = 25,
                                 TotalSteps = 3,
+                                mealType = "Dinner",
                                 RecipeSteps = new List<RecipeStep>
                                {
                                    new RecipeStep
@@ -63,8 +64,12 @@ namespace CrockpotApp.Services
                                        InstructionText = "Place corn chips in an oven proof dish. Spoon over the nacho mix. " +
                                                                 "Scatter over grated cheese. Place under a preheated grill, " +
                                                                         "and grill for 3-4 minutes until the cheese is melted.",
-                                       TotalPages = 3},
-                                    },
+                                       TotalPages = 3,
+                                       HasTimer = true,
+                                       TimerMinuteCount = 3,
+                                       TimerSecondCount = 30
+                                   },
+                                },
                                 IngredientList = new List<Ingredient>
                                {
                                    new Ingredient
@@ -107,6 +112,7 @@ namespace CrockpotApp.Services
                                PrepTime = 5,
                                CookTime = 5,
                                TotalSteps = 3,
+                                mealType = "Vegetarian",
                                RecipeSteps = new List<RecipeStep>
                                {
                                    new RecipeStep
@@ -136,7 +142,10 @@ namespace CrockpotApp.Services
                                                                         " of the batter. Turn and cook the other side for a further 2-3 minutes " +
                                                                         "until fritters are golden and cooked through. It maybe necessary to " +
                                                                         "add extra oil to the pan during cooking.",
-                                       TotalPages = 3
+                                       TotalPages = 3,
+                                       HasTimer = true,
+                                       TimerMinuteCount = 3,
+                                       TimerSecondCount = 0
                                    },
                                },
                                IngredientList = new List<Ingredient>
@@ -188,6 +197,7 @@ namespace CrockpotApp.Services
                                PrepTime = 30,
                                CookTime = 20,
                                TotalSteps = 6,
+                               mealType = "Vegetarian",
                                RecipeSteps = new List<RecipeStep>
                                {
                                    new RecipeStep
@@ -214,7 +224,10 @@ namespace CrockpotApp.Services
                                        Title = "Step 3",
                                        InstructionText = "Add chilli, lime juice and Frozen Peas. " +
                                                                 "Cover and cook for 5 minutes until the peas are tender, stirring regularly.",
-                                       TotalPages = 6
+                                       TotalPages = 6,
+                                       HasTimer = true,
+                                       TimerMinuteCount = 3,
+                                       TimerSecondCount = 0
                                    },
 
                                    new RecipeStep
@@ -241,7 +254,10 @@ namespace CrockpotApp.Services
                                        Title = "Step 6",
                                        InstructionText = "Place samosas on an oven tray lined with baking paper. Brush with a little beaten egg or milk. " +
                                                                     "Bake for 15-20 minutes until the pastry is golden and filling hot.",
-                                       TotalPages = 6
+                                       TotalPages = 6,
+                                       HasTimer = true,
+                                       TimerMinuteCount = 20,
+                                       TimerSecondCount = 0
                                    },
                                },
                                IngredientList = new List<Ingredient>
@@ -322,6 +338,7 @@ namespace CrockpotApp.Services
                                PrepTime = 20,
                                CookTime = 10,
                                TotalSteps = 5,
+                               mealType = "Dinner",
                                RecipeSteps = new List<RecipeStep>
                                {
                                    new RecipeStep
@@ -350,7 +367,10 @@ namespace CrockpotApp.Services
                                                                     " Dissolve yeast extract, marmite or vegemite in ½ cup boiling water. Add it to the mince " +
                                                                     "with the Frozen Mixed Vegetables and cook for a further 2 minutes " +
                                                                     "before placing in an ovenproof dish",
-                                       TotalPages = 5
+                                       TotalPages = 5,
+                                       HasTimer = true,
+                                       TimerMinuteCount = 2,
+                                       TimerSecondCount = 0
                                    },
 
                                    new RecipeStep
@@ -367,7 +387,10 @@ namespace CrockpotApp.Services
                                        Title = "Step 5",
                                        InstructionText = "Baked in the preheated oven for about 20 minutes or until the " +
                                                                     "pie has heated through and the cheese has melted.",
-                                       TotalPages = 5
+                                       TotalPages = 5,
+                                       HasTimer = true,
+                                       TimerMinuteCount = 20,
+                                       TimerSecondCount = 0
                                    },
                                },
                                IngredientList = new List<Ingredient>
@@ -450,6 +473,7 @@ namespace CrockpotApp.Services
                                PrepTime = 10,
                                CookTime = 25,
                                TotalSteps = 3,
+                               mealType = "Vegetarian",
                                RecipeSteps = new List<RecipeStep>
                                {
                                    new RecipeStep
@@ -479,7 +503,10 @@ namespace CrockpotApp.Services
                                        InstructionText = "Sprinkle grated cheese over the beans. Fold in excess pastry over the bean filling. Brush pastry " +
                                                             "top with the milk. Bake for 20-25 minutes until pastry is golden and " +
                                                                 "filling hot.",
-                                       TotalPages = 3
+                                       TotalPages = 3,
+                                       HasTimer = true,
+                                       TimerMinuteCount = 25,
+                                       TimerSecondCount = 0
                                    },
                                },
                                IngredientList = new List<Ingredient>
@@ -525,6 +552,7 @@ namespace CrockpotApp.Services
                                PrepTime = 15,
                                CookTime = 30,
                                TotalSteps = 3,
+                               mealType = "Quick and Easy",
                                RecipeSteps = new List<RecipeStep>
                                {
                                    new RecipeStep
@@ -553,7 +581,10 @@ namespace CrockpotApp.Services
                                                             "Fold sheets in half away from you, then roll in half again so there is a double layer of " +
                                                                 "pastry at the base of the sausage roll. Brush top of rolls with egg and " +
                                                                     "sprinkle the combined seeds over each roll. Cook in oven for 30 minutes.",
-                                       TotalPages = 3
+                                       TotalPages = 3,
+                                       HasTimer = true,
+                                       TimerMinuteCount = 30,
+                                       TimerSecondCount = 0
                                    },
                                },
                                IngredientList = new List<Ingredient>
@@ -628,6 +659,7 @@ namespace CrockpotApp.Services
                                PrepTime = 5,
                                CookTime = 25,
                                TotalSteps = 3,
+                               mealType = "Quick and Easy",
                                RecipeSteps = new List<RecipeStep>
                                {
                                    new RecipeStep
@@ -656,7 +688,10 @@ namespace CrockpotApp.Services
                                                                 "sheet and press out to form a circle. Brush with olive oil and sprinkle with sea " +
                                                                             "salt, rosemary leaves and chopped garlic. Bake for approximately 15-20 " +
                                                                                     "minutes until cooked and golden",
-                                       TotalPages = 3
+                                       TotalPages = 3,
+                                       HasTimer = true,
+                                       TimerMinuteCount = 20,
+                                       TimerSecondCount = 0
                                    },
                                },
                                IngredientList = new List<Ingredient>
