@@ -19,6 +19,7 @@ namespace CrockpotApp.Models
     ///8)  PrepTime         - Integer value defining the time taken to prepare the meal
     ///9)  CookTime         - Integer value defining the time taken to cook the meal
     ///10) TotalSteps       - Integer value defining the total number of pages and steps in the recipe.
+    ///11) mealType         - String value defining the Category that the meal should be stored in
     /// </remarks>
     public class Recipe
     {

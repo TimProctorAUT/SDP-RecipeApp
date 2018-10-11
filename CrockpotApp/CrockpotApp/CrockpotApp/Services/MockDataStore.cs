@@ -9,6 +9,11 @@ namespace CrockpotApp.Services
     /// <summary>
     /// MockDataStore Class that extends the <see cref="IDataStore{T}"/> Interface
     /// </summary>
+    /// 
+    ///<remarks>
+    ///Variables:
+    ///1) items             - A List of Recipe Types where all the recipes in the app are stored
+    /// </remarks>
     public class MockDataStore : IDataStore<Recipe>
     {
         List<Recipe> items; 
@@ -774,6 +779,7 @@ namespace CrockpotApp.Services
                 //            }
             };
 
+            //Adds all Recipes into the items List
             foreach (var item in mockItems)
             {
                 items.Add(item);

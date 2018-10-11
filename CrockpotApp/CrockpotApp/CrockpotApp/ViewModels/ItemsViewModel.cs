@@ -31,7 +31,7 @@ namespace CrockpotApp.ViewModels
 
         public ItemsViewModel(string mealType)
         {
-            Title = "Crockpot - " + mealType;
+            Title = mealType;
             Items = new ObservableCollection<Recipe>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand(mealType));
                        
