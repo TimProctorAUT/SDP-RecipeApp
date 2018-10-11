@@ -15,11 +15,13 @@
                 HorizontalOptions="CenterAndExpand" />
 
             <StackLayout x:Name="TimerBlock" Orientation="Vertical" IsVisible="false" BackgroundColor="#808080">
-                
                 <Label x:Name="TimerText" HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
-                <Button x:Name="TimerButton" HorizontalOptions="CenterAndExpand" Text="Start" Clicked="TimerButton_Clicked"/>
-                
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="TimerButton" HorizontalOptions="CenterAndExpand" Text="Start" Clicked="TimerButton_Clicked"/>
+                    <Button x:Name="PauseButton" HorizontalOptions="CenterAndExpand" Text="Pause" Clicked="PauseButton_Clicked" IsVisible="False"/>
+                </StackLayout>
             </StackLayout>
+
 
             <StackLayout Orientation="Horizontal">
                 <Button x:Name="BackButton" Clicked="Back_Clicked" Text="Back"/>
