@@ -14,6 +14,9 @@ using System.Threading;
 
 namespace CrockpotApp.Views
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RecipeStepPage : ContentPage
     {
@@ -27,6 +30,9 @@ namespace CrockpotApp.Views
         public int CurrentMinutes { get; set; }
         public int CurrentSeconds { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public RecipeStepPage()
         {
             CurrentPageNumber = 0;
@@ -37,6 +43,12 @@ namespace CrockpotApp.Views
             BindingContext = viewModel = new RecipeStepViewModel(CurrentPageNumber, TotalPageCount, null);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="item"></param>
+        /// <param name="PageNumber"></param>
+        /// <param name="TotalPages"></param>
         public RecipeStepPage(Recipe item, int PageNumber, int TotalPages)
         {
             InitializeComponent();
@@ -53,8 +65,8 @@ namespace CrockpotApp.Views
             CurrentSeconds = Item.RecipeSteps[CurrentPageNumber - 1].TimerSecondCount;
             CurrentMinutes = Item.RecipeSteps[CurrentPageNumber - 1].TimerMinuteCount;
 
-            //TODO: Move to Own Method, Add Placeholder Image if URL = NULL or Image Doesnt Exist
-            MainImage.Source = ImageSource.FromFile(Item.ImageURL);
+            LoadRecipeImage();
+
 
             if (CurrentPageNumber == TotalPageCount)
             {
@@ -69,20 +81,51 @@ namespace CrockpotApp.Views
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        private void LoadRecipeImage()
+        {
+            if (Item.ImageURL == null || Item.ImageURL == "")
+            {
+                Item.ImageURL = "placeholder.png";
+                MainImage.Source = ImageSource.FromFile(Item.ImageURL);
+            }
+            else
+            {
+                MainImage.Source = ImageSource.FromFile(Item.ImageURL);
+            }
+        }
+
+        /// <summary>
+        /// StartTimer Method
+        /// </summary>
+        /// 
+        /// <remarks>
+        /// This Method Is used to count down the seconds and Minute set in the current recipe steps
+        /// </remarks>
+        /// 
+        /// <param name="token"></param>
+        /// <param name="timerMinuteCount"></param>
+        /// <param name="timerSecondCount"></param>
+        /// 
+        /// <returns>
+        /// Task Object - Used For Threading and Async
+        /// </returns>
         private async Task StartTimer(CancellationToken token, int timerMinuteCount, int timerSecondCount)
         {
             TimerButton.Text = "Stop";
             PauseButton.IsVisible = true;
-
-            while (timerSecondCount >= 0 && !token.IsCancellationRequested)
+                        
+            while (timerSecondCount >= 0 && !token.IsCancellationRequested) //While Loop to Count Down Until Minutes and Seconds both == 0
             {
-                if (timerSecondCount == 0 && timerMinuteCount != 0)
+                if (timerSecondCount == 0 && timerMinuteCount != 0) //turns seconds to 59 if seconds reach zero and minutes isn't  
                 {
                     timerSecondCount = 59;
                     timerMinuteCount--;
                 }
                 Device.BeginInvokeOnMainThread(() => TimerText.Text = timerMinuteCount.ToString().PadLeft(2, '0') + ":" + timerSecondCount.ToString().PadLeft(2, '0'));
-                await Task.Delay(1000, token);
+                await Task.Delay(1000, token);  //1 Second Delay
 
                 timerSecondCount--;
                 CurrentMinutes = timerMinuteCount;
@@ -90,33 +133,19 @@ namespace CrockpotApp.Views
             }
         }
 
-        async void NextStep_Clicked(object sender, EventArgs e)
-        {
-
-            if (CurrentPageNumber < TotalPageCount)
-            {
-                await Navigation.PushModalAsync(new NavigationPage(new RecipeStepPage(Item, CurrentPageNumber + 1, TotalPageCount)));
-            }
-
-            if (NextStep.Text.Equals("Finish"))
-            {
-                for (int pop = 0; pop < TotalPageCount - 1; pop++)
-                {
-                    Navigation.PopModalAsync(); //'await' not used to allow for multiple Pops before to be called at once
-                }
-
-                await Navigation.PopModalAsync();
-            }
-        }
-
-        async void Back_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PopModalAsync();
-        }
-
+        /// <summary>
+        /// TimerButton_Clicked Method
+        /// </summary>
+        /// 
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// 
+        /// <remarks>
+        /// A Method used when the TimerButton is Clicked. This Method will Play or Stop/Reset the Timer depending on it's current state.
+        /// </remarks>
         private async void TimerButton_Clicked(object sender, EventArgs e)
         {
-            if (cts == null)
+            if (cts == null) //Tests if a CancellationToken Has been Already Created
             {
                 cts = new CancellationTokenSource();
                 try
@@ -125,7 +154,7 @@ namespace CrockpotApp.Views
                 }
                 catch (OperationCanceledException)
                 {
-
+                    
                 }
                 finally
                 {
@@ -133,17 +162,23 @@ namespace CrockpotApp.Views
                     PauseButton.IsVisible = false;
                 }
             }
-            else
+            else  //If a CancelationToken had been Created already.
             {
-                cts.Cancel();
-                TimerButton.Text = "Start";
-                TimerText.Text = Item.RecipeSteps[CurrentPageNumber - 1].TimerMinuteCount.ToString().PadLeft(2, '0') + ":" + Item.RecipeSteps[CurrentPageNumber - 1].TimerSecondCount.ToString().PadLeft(2, '0');
-                CurrentMinutes = Item.RecipeSteps[CurrentPageNumber - 1].TimerMinuteCount;
-                CurrentSeconds = Item.RecipeSteps[CurrentPageNumber - 1].TimerSecondCount;
+                cts.Cancel(); //Cancel Timer Function
+                TimerButton.Text = "Start"; //TimerButton == Start (Has been changed to 'Stop' in StartTimer)
+                TimerText.Text = Item.RecipeSteps[CurrentPageNumber - 1].TimerMinuteCount.ToString().PadLeft(2, '0') + ":" + Item.RecipeSteps[CurrentPageNumber - 1].TimerSecondCount.ToString().PadLeft(2, '0'); //Resets Timer to Max Minutes and Seconds
+                CurrentMinutes = Item.RecipeSteps[CurrentPageNumber - 1].TimerMinuteCount;  //Resets CurrentMinutes to the Max
+                CurrentSeconds = Item.RecipeSteps[CurrentPageNumber - 1].TimerSecondCount;  //Resets CurrentSeconds to the Max
                 cts = null;
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// 
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void PauseButton_Clicked(object sender, EventArgs e)
         {
             if (cts == null)
@@ -170,5 +205,43 @@ namespace CrockpotApp.Views
                 cts = null;
             }
         }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        async void NextStep_Clicked(object sender, EventArgs e)
+        {
+
+            if (CurrentPageNumber < TotalPageCount)
+            {
+                await Navigation.PushModalAsync(new NavigationPage(new RecipeStepPage(Item, CurrentPageNumber + 1, TotalPageCount)));
+            }
+
+            if (NextStep.Text.Equals("Finish"))
+            {
+                for (int pop = 0; pop < TotalPageCount - 1; pop++)
+                {
+                    Navigation.PopModalAsync(); //'await' not used to allow for multiple Pops before to be called at once
+                }
+
+                await Navigation.PopModalAsync();
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        async void Back_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
+
+
     }
 }
+

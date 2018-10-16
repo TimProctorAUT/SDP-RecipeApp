@@ -31,7 +31,14 @@ namespace CrockpotApp.Views
 
             BindingContext = viewModel = new ItemsViewModel(mealType);
         }
+        
+        public ItemsPage(string ingredient, int ID)
+        {
+            InitializeComponent();
 
+            BindingContext = viewModel = new ItemsViewModel(ingredient, ID);
+        }
+            
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
             var item = args.SelectedItem as Recipe;
@@ -46,7 +53,7 @@ namespace CrockpotApp.Views
 
         async void AddItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new CategoryPage()));
+            await Navigation.PushModalAsync(new NavigationPage(new CategoryPage(viewModel.Items)));
         }
 
         protected override void OnAppearing()

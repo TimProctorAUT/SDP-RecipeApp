@@ -6,29 +6,47 @@
              BackgroundColor="Black">
     <ContentPage.Content>
         <ScrollView>
-            
+                                        
+            <StackLayout Padding="10">
+
+                <Label Text="Search By Ingredient" FontSize="Medium" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="SearchBar" Text="Search Ingredients" TextColor="LightGray" HorizontalOptions="StartAndExpand" WidthRequest="240" BackgroundColor="White" Focused="SearchBar_Focused" />
+                    <Button x:Name="SearchButton" Text="Search" Clicked="SearchButton_Clicked"/>
+                </StackLayout>
+
+                <StackLayout Padding="20"/>
+
                 <StackLayout>
+
+                    <Label  Text="Search by Category" FontSize="Medium" TextColor="White" HorizontalOptions="CenterAndExpand"/>
 
                     <Button Text="Breakfast"
                             Command="{Binding NavigateCommand}"
-                            CommandParameter="Breakfast"          />
+                            CommandParameter="Breakfast"         />
 
                     <Button Text="Lunch"
                             Command="{Binding NavigateCommand}"
                             CommandParameter="Lunch"             />
 
-                <Button Text="Dinner"
+                    <Button Text="Dinner"
                             Command="{Binding NavigateCommand}"
-                            CommandParameter="Dinner"             />
+                            CommandParameter="Dinner"            />
 
-                <Button Text="Quick and Easy"
+                    <Button Text="Quick and Easy"
                             Command="{Binding NavigateCommand}"
-                            CommandParameter="Quick and Easy"     />
-                
+                            CommandParameter="Quick and Easy"    />
+
                     <Button Text="Vegetarian"
                             Command="{Binding NavigateCommand}"
-                            CommandParameter="Vegetarian"         />
+                            CommandParameter="Vegetarian"        />
                 </StackLayout>
+
+                <StackLayout Padding="30"/>
+
+                <Button Text="Back" HorizontalOptions="Start" Clicked="BackButton_Clicked"/>
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
