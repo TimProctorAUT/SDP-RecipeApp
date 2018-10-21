@@ -71,8 +71,8 @@ namespace CrockpotApp.Services
                                                                         "and grill for 3-4 minutes until the cheese is melted.",
                                        TotalPages = 3,
                                        HasTimer = true,
-                                       TimerMinuteCount = 3,
-                                       TimerSecondCount = 30
+                                       TimerMinuteCount = 0,
+                                       TimerSecondCount = 10
                                    },
                                 },
                                 IngredientList = new List<Ingredient>

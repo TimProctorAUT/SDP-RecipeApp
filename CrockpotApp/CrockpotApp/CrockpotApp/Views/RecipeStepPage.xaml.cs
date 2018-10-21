@@ -118,7 +118,7 @@ namespace CrockpotApp.Views
             PauseButton.IsVisible = true;
                         
             while (timerSecondCount >= 0 && !token.IsCancellationRequested) //While Loop to Count Down Until Minutes and Seconds both == 0
-            {
+            {                
                 if (timerSecondCount == 0 && timerMinuteCount != 0) //turns seconds to 59 if seconds reach zero and minutes isn't  
                 {
                     timerSecondCount = 59;
@@ -126,11 +126,35 @@ namespace CrockpotApp.Views
                 }
                 Device.BeginInvokeOnMainThread(() => TimerText.Text = timerMinuteCount.ToString().PadLeft(2, '0') + ":" + timerSecondCount.ToString().PadLeft(2, '0'));
                 await Task.Delay(1000, token);  //1 Second Delay
-
+                               
                 timerSecondCount--;
                 CurrentMinutes = timerMinuteCount;
                 CurrentSeconds = timerSecondCount;
+
+                if (timerSecondCount == 0 && timerMinuteCount == 0)
+                {
+                    TimerText.Text = "Complete!";
+                    await Task.Delay(500, token);
+                    TimerText.TextColor = Color.Green;
+                    await Task.Delay(500, token);
+                    TimerText.TextColor = Color.Yellow;
+                    await Task.Delay(500, token);
+                    TimerText.TextColor = Color.Gold;
+                    await Task.Delay(500, token);
+                    TimerText.TextColor = Color.Blue;
+                    await Task.Delay(500, token);
+                    TimerText.TextColor = Color.Red;
+                    await Task.Delay(500, token);
+                    TimerText.TextColor = Color.Indigo;
+                    await Task.Delay(500, token);
+                    TimerText.TextColor = Color.Black;
+
+                    CancelTimer();
+                }
+
             }
+
+            
         }
 
         /// <summary>
@@ -164,13 +188,18 @@ namespace CrockpotApp.Views
             }
             else  //If a CancelationToken had been Created already.
             {
-                cts.Cancel(); //Cancel Timer Function
-                TimerButton.Text = "Start"; //TimerButton == Start (Has been changed to 'Stop' in StartTimer)
-                TimerText.Text = Item.RecipeSteps[CurrentPageNumber - 1].TimerMinuteCount.ToString().PadLeft(2, '0') + ":" + Item.RecipeSteps[CurrentPageNumber - 1].TimerSecondCount.ToString().PadLeft(2, '0'); //Resets Timer to Max Minutes and Seconds
-                CurrentMinutes = Item.RecipeSteps[CurrentPageNumber - 1].TimerMinuteCount;  //Resets CurrentMinutes to the Max
-                CurrentSeconds = Item.RecipeSteps[CurrentPageNumber - 1].TimerSecondCount;  //Resets CurrentSeconds to the Max
-                cts = null;
+                CancelTimer();
             }
+        }
+
+        private void CancelTimer()
+        {
+            cts.Cancel(); //Cancel Timer Function
+            TimerButton.Text = "Start"; //TimerButton == Start (Has been changed to 'Stop' in StartTimer)
+            CurrentMinutes = Item.RecipeSteps[CurrentPageNumber - 1].TimerMinuteCount;  //Resets CurrentMinutes to the Max
+            CurrentSeconds = Item.RecipeSteps[CurrentPageNumber - 1].TimerSecondCount;  //Resets CurrentSeconds to the Max
+            TimerText.Text = CurrentMinutes.ToString().PadLeft(2, '0') + ":" + CurrentSeconds.ToString().PadLeft(2, '0'); //Resets Timer to Max Minutes and Seconds
+            cts = null;
         }
 
         /// <summary>

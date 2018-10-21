@@ -14,14 +14,24 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <StackLayout x:Name="TimerBlock" Orientation="Vertical" IsVisible="false" BackgroundColor="#808080">
-                <Label x:Name="TimerText" HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
-                <StackLayout Orientation="Horizontal">
-                    <Button x:Name="TimerButton" HorizontalOptions="CenterAndExpand" Text="Start" Clicked="TimerButton_Clicked"/>
-                    <Button x:Name="PauseButton" HorizontalOptions="CenterAndExpand" Text="Pause" Clicked="PauseButton_Clicked" IsVisible="False"/>
+            <StackLayout x:Name="TimerBlock" Orientation="Vertical" IsVisible="false" BackgroundColor="Black" Padding="2">
+                <StackLayout BackgroundColor="Black">
+                    <StackLayout Padding="2" BackgroundColor="Black">
+                        <StackLayout BackgroundColor="#808080">
+                            <Label Text="Cooking Timer" FontSize="Medium" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Padding="2" BackgroundColor="Black">
+                        <StackLayout BackgroundColor="#808080">
+                            <Label x:Name="TimerText" HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="Black"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Button x:Name="TimerButton" HorizontalOptions="CenterAndExpand" Text="Start" Clicked="TimerButton_Clicked"/>
+                                <Button x:Name="PauseButton" HorizontalOptions="CenterAndExpand" Text="Pause" Clicked="PauseButton_Clicked" IsVisible="False"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
                 </StackLayout>
             </StackLayout>
-
 
             <StackLayout Orientation="Horizontal">
                 <Button x:Name="BackButton" Clicked="Back_Clicked" Text="Back"/>

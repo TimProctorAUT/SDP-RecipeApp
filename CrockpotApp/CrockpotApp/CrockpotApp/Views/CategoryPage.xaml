@@ -3,16 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CrockpotApp.Views.CategoryPage"
              Title="{Binding Title}"
-             BackgroundColor="Black">
+             BackgroundColor="White">
     <ContentPage.Content>
         <ScrollView>
                                         
             <StackLayout Padding="10">
 
-                <Label Text="Search By Ingredient" FontSize="Medium" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Search By Ingredient" FontSize="Medium" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
 
                 <StackLayout Orientation="Horizontal">
-                    <Entry x:Name="SearchBar" Text="Search Ingredients" TextColor="LightGray" HorizontalOptions="StartAndExpand" WidthRequest="240" BackgroundColor="White" Focused="SearchBar_Focused" />
+                    <StackLayout Padding="2" BackgroundColor="Black">
+                        <Entry x:Name="SearchBar" Text="Search Ingredients" TextColor="LightGray" HorizontalOptions="StartAndExpand" WidthRequest="240" BackgroundColor="White" Focused="SearchBar_Focused"/>
+                    </StackLayout>
                     <Button x:Name="SearchButton" Text="Search" Clicked="SearchButton_Clicked"/>
                 </StackLayout>
 
@@ -20,7 +22,7 @@
 
                 <StackLayout>
 
-                    <Label  Text="Search by Category" FontSize="Medium" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+                    <Label  Text="Search by Category" FontSize="Medium" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
 
                     <Button Text="Breakfast"
                             Command="{Binding NavigateCommand}"

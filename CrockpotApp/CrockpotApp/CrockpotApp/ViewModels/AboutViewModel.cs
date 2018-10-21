@@ -9,7 +9,7 @@ namespace CrockpotApp.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "Crockpot - About";
+            Title = "About Crockpot";
 
             OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
         }
