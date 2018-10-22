@@ -44,11 +44,16 @@ namespace CrockpotApp.Views
         }
 
         /// <summary>
-        /// 
+        /// RecipeStepPage Constructor
         /// </summary>
+        /// 
         /// <param name="item"></param>
         /// <param name="PageNumber"></param>
         /// <param name="TotalPages"></param>
+        /// 
+        ///<remarks>
+        /// Takes In a Recipe Object, and Two Integers representing the Current Step Number and the Total amount of steps
+        /// </remarks>
         public RecipeStepPage(Recipe item, int PageNumber, int TotalPages)
         {
             InitializeComponent();
@@ -82,8 +87,12 @@ namespace CrockpotApp.Views
         }
 
         /// <summary>
-        /// 
+        /// LoadRecipeImage Method
         /// </summary>
+        /// 
+        ///<remarks>
+        ///Loads an Image from the Recipe Objects set File of else Loads in the Placeholder Image if nothing is available.
+        /// </remarks>
         private void LoadRecipeImage()
         {
             if (Item.ImageURL == null || Item.ImageURL == "")
@@ -203,11 +212,15 @@ namespace CrockpotApp.Views
         }
 
         /// <summary>
-        /// 
+        /// PauseButton_Clicked
         /// </summary>
         /// 
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        /// 
+        ///<remarks>
+        /// This Method Stops the Counter and leaves the Number at the Current Count OR Pausing the Timer.
+        ///</remarks>
         private async void PauseButton_Clicked(object sender, EventArgs e)
         {
             if (cts == null)
@@ -237,10 +250,15 @@ namespace CrockpotApp.Views
 
 
         /// <summary>
-        /// 
+        /// NextStep_Clicked Method
         /// </summary>
+        /// 
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        /// 
+        ///<remarks>
+        ///Method Loads next RecipeStep in the Line or closes RecipeSteps if on Final Page.
+        /// </remarks>
         async void NextStep_Clicked(object sender, EventArgs e)
         {
 
@@ -261,10 +279,14 @@ namespace CrockpotApp.Views
         }
 
         /// <summary>
-        /// 
+        /// Back_Clicked Method
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        /// 
+        ///<remarks>
+        ///Returns to Last Opened Page
+        /// </remarks>
         async void Back_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();

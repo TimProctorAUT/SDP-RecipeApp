@@ -7,9 +7,23 @@ using CrockpotApp.Models;
 
 namespace CrockpotApp.Views
 {
+    /// <summary>
+    /// AboutPage.cs
+    /// </summary>
+    /// 
+    ///<remarks>
+    ///The Class for the About Page which holds some details about the app and some Unit Tests.
+    /// </remarks>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AboutPage : ContentPage
     {
+        /// <summary>
+        /// AboutPage Default Constructor
+        /// </summary>
+        /// 
+        ///<remarks>
+        ///Loads AboutPage and Creates some Unit Tests.
+        /// </remarks>
         public AboutPage()
         {
             InitializeComponent();

@@ -13,6 +13,13 @@ using System.Collections.ObjectModel;
 
 namespace CrockpotApp.Views
 {
+    /// <summary>
+    /// CategoryPage.cs
+    /// </summary>
+    /// 
+    ///<remarks>
+    /// CategoryPage Class which holds Category Buttons and Search By Ingredients Sections which creates a filtered list at the Users Request.
+    /// </remarks>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CategoryPage : ContentPage
     {
@@ -28,6 +35,9 @@ namespace CrockpotApp.Views
             private set; get;
         }
 
+        /// <summary>
+        /// CategoryPage Default Constructor
+        /// </summary>
         public CategoryPage()
         {
             InitializeComponent();
@@ -47,6 +57,15 @@ namespace CrockpotApp.Views
             BindingContext = this;
         }
 
+        /// <summary>
+        /// CategoryPage Constructor
+        /// </summary>
+        /// 
+        /// <param name="Items"></param>
+        /// 
+        ///<remarks>
+        /// Takes in the Full list of Recipes and adds all the ingredients to a String Array. Then Initialises the Commands.
+        /// </remarks>
         public CategoryPage(ObservableCollection<Recipe> Items)
         {
             InitializeComponent();
@@ -92,6 +111,16 @@ namespace CrockpotApp.Views
             Title = "Search";
         }
 
+        /// <summary>
+        ///  SearchButton_Clicked Method
+        /// </summary>
+        /// 
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// 
+        /// <remarks>
+        ///  Checks if the Text in the Current Search Box is a presents Ingredient and then Requests a list of recipes including this Ingredient.
+        /// </remarks>
         private void SearchButton_Clicked(object sender, EventArgs e)
         {
             string searchedIngredient = SearchBar.Text;
@@ -126,12 +155,32 @@ namespace CrockpotApp.Views
                         
         }
 
+        /// <summary>
+        /// SearchBar_Focused Method
+        /// </summary>
+        /// 
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// 
+        ///<remarks>
+        ///Removes all Text in Box when the Search Bar is Pressed
+        /// </remarks>
         private void SearchBar_Focused(object sender, FocusEventArgs e)
         {
             SearchBar.Text = "";
             SearchBar.TextColor = Color.Black;
         }
 
+        /// <summary>
+        /// BackButton_Clicked Method
+        /// </summary>
+        /// 
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// 
+        /// <remarks>
+        /// Closes the Current Page and Returns to the last opened page.
+        /// </remarks>
         async private void BackButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();

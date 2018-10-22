@@ -15,8 +15,11 @@
     </XamlFileMeta>
     <XamlFileMeta>
       <FilePath>C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\Views\CategoryPage.xaml</FilePath>
-      <Hash>41-BE-27-C9-2A-D4-0B-1A-1D-17-7D-2B-CD-CA-26-B1</Hash>
-      <Properties />
+      <Hash>92-FE-40-4E-C7-43-1F-7A-F1-FC-C8-07-BA-5B-1A-17</Hash>
+      <Properties>
+        <string>Title</string>
+        <string>BackgroundColor</string>
+      </Properties>
     </XamlFileMeta>
     <XamlFileMeta>
       <FilePath>C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\Views\ItemDetailPage.xaml</FilePath>
@@ -27,7 +30,7 @@
     </XamlFileMeta>
     <XamlFileMeta>
       <FilePath>C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\Views\ItemsPage.xaml</FilePath>
-      <Hash>86-18-30-C6-F0-C1-DE-FF-C2-91-D8-32-30-2D-36-CA</Hash>
+      <Hash>6E-CE-C5-ED-3E-9E-B4-DF-7F-13-78-30-CD-4E-1B-F8</Hash>
       <Properties>
         <string>Title</string>
       </Properties>
@@ -38,15 +41,8 @@
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
-      <FilePath>C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\Views\NewItemPage.xaml</FilePath>
-      <Hash>99-22-F6-5B-B8-52-69-B3-AF-BF-D3-CA-F4-01-E6-00</Hash>
-      <Properties>
-        <string>Title</string>
-      </Properties>
-    </XamlFileMeta>
-    <XamlFileMeta>
       <FilePath>C:\Users\OEM\Documents\GitHub\SDP-RecipeApp\CrockpotApp\CrockpotApp\CrockpotApp\Views\RecipeStepPage.xaml</FilePath>
-      <Hash>67-25-4B-AC-0C-A2-27-C6-EE-8E-63-A1-FC-11-54-A2</Hash>
+      <Hash>E5-53-6E-70-96-44-9A-C3-8C-07-F0-9C-5C-06-40-48</Hash>
       <Properties>
         <string>Title</string>
       </Properties>

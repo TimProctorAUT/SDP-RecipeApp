@@ -7,21 +7,20 @@ using CrockpotApp.Unit_Tests;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace CrockpotApp
 {
+    /// <summary>
+    /// App.cs - The App Class is the the first class executed on opening of the App where it launches the main first page.
+    /// </summary>
     public partial class App : Application
     {
 
         public App()
         {
-            InitializeComponent();
-
-
-
+            InitializeComponent();                       
             MainPage = new MainPage();
         }
 
         protected override void OnStart()
         {
-
             // Handle when your app starts
         }
 

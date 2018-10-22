@@ -21,13 +21,7 @@ namespace CrockpotApp.ViewModels
             Title = "All Recipes";
             Items = new ObservableCollection<Recipe>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-
-            MessagingCenter.Subscribe<NewItemPage, Recipe>(this, "AddItem", async (obj, item) =>
-            {
-                var newItem = item as Recipe;
-                Items.Add(newItem);
-                await DataStore.AddItemAsync(newItem);
-            });
+                        
         }
 
         public ItemsViewModel(string mealType)
